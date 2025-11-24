@@ -1,0 +1,106 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+
+
+    {% block content %}
+    <nav>
+        <a href="{% url 'home' %}"><div class="nav-left">MYPORTFOLIO</div></a>
+        <div class="nav-right">
+            <ul>
+                <li><a href="#about-me">ABOUT ME</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="space-btw-nav" id="about-me"></div>
+    <div class="container">
+        <section>
+            <div class="home-content">
+                <div class="home-left">
+                    <div>
+                        <h4>Hi, I'm</h4>
+                        <h1>GEHUNEL 
+                        SEGLA GBEDJI</h1>
+                        <p class="dev">Dev FullStack <span class="checkIcon">&#x2713</span></p>
+                    </div>
+                </div>
+                <div class="home-right">
+                    <div>
+                        <img id="img" src="{% static 'portfolio/gris2.jpg' %}" alt="my pic">
+                        <p class="pseudo"><q><strong>GRISD3V</strong></q></p>
+                    </div>
+                    
+                </div>
+            </div>
+            <hr>
+            <div class="home-bottom">
+                <div>
+                    <p class="">
+                        My interest in web development stems from a personal passion, an academic experience, 
+                        and a development desire to be part of this new world of computing.
+                    </p>
+                    <p>                    
+                        After obtaining my technical diplomas in high school, I embarked on a journey
+                        of self-education in computer programming. Each new concept I learned seemed like 
+                        a piece of a complex puzzle.
+                    </p>
+                    <p>
+                        I had the opportunity to take several specialized courses at 
+                        different levels online for free. I continue to learn and am ready to take on any challenges 
+                        that come my way.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div id="skills"></div>
+        <section>
+            <h2>SKILLS</h2>
+            <h3>Experienced Web Developper with strongs skills in:</h3>
+            <div class="skills-container">
+                <ul>
+                    <li><img src="{% static 'portfolio/html.jpg' %}" alt="html icon"></li>
+                    <li><img src="{% static 'portfolio/css.jpg' %}" alt="css icon"></li>
+                    <li><img src="{% static 'portfolio/js.jpg' %}" alt="js icon"></li>
+                    <li><img src="{% static 'portfolio/php.jpg' %}" alt="php icon"></li>
+                    <li><img src="{% static 'portfolio/mysql.jpg' %}" alt="mysql" icon"></li>
+                    <li><img src="{% static 'portfolio/python.jpg' %}" alt="python icon"></li>
+                    <li><img src="{% static 'portfolio/django.jpg' %}" alt="django icon"></li>
+                    <li><img src="{% static 'portfolio/bootstrap.jpg' %}" alt="bootstrap icon"></li>
+                    <li><img src="{% static 'portfolio/wordpress.jpg' %}" alt="wordpress icon"></li>
+                </ul>
+
+            </div>
+        </section>
+        <section>
+            <h2>PROJECTS</h2>
+            <div class="article-container">
+                <ul>
+                    <li><a href="{% url 'project' %}"><article>PROJET 1</article></a></li>
+                    <li><a href="#"><article>PROJET 2</article></a></li>
+                    <li><a href="#"><article>PROJET 3</article></a></li>
+                    <li><a href="#"><article>PROJET 4</article></a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>CONTACT</h2>
+            <div class="contact-container">
+                <form class="form">
+                    <label for="pseudo">PSEUDO: 
+                        <input id="pseudo"/>
+                    </label>
+                    <label for="email">EMAIL: 
+                        <input id="email"/>
+                    </label>
+                    <label for="msg">MESSAGE: 
+                        <textarea id="msg"></textarea>
+                    </label>
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    {% endblock %}
+

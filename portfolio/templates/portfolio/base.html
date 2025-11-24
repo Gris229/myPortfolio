@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+
+    <title>MY PORTFOLIO</title>
+</head>
+<body>
+
+    {% block content %}
+    {% endblock %}
+
+    <div class="space-btw-footer"></div>
+    <footer>
+        <div id="social">
+            <div>
+                <ul>
+                    <a href="#"><li>WhatsApp</li></a>
+                    <a href="#"><li>LinkedIn</li></a>
+                    <a href="#"><li>GitHub</li></a>
+                </ul>
+            </div>
+        </div>
+        <address>
+            Cotonou, Benin <br>
+            Copyright 2025 GRISD3V<br>
+            All Rights Reserved
+        </address>
+    </footer>
+    
+</body>
+</html>
