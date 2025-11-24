@@ -1,0 +1,11 @@
+from django.shortcuts import render, HttpResponse
+
+# Create your views here.
+
+def home(request):
+
+    return render(request, 'portfolio/home.html')
+
+def project(request):
+
+    return render(request, 'portfolio/project.html')
